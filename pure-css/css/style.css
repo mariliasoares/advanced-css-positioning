@@ -1,0 +1,58 @@
+/* Reset */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: Georgia, "Bitstream Charter", "URW Bookman L", serif;
+  color: #252525;
+}
+
+/* Menu */
+.menu {
+  background: #d87063;
+  padding: 20px 0;
+}
+
+.menu-container {
+  max-width: 960px;
+  /* com width ele estava gerando uma barra lateral, com max ele diminui junto com o navegador */
+  margin: 0 auto; /* centralizar para os lados e no margin top bottom */
+}
+
+.menu-container::after,
+.menu-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a.menu-logo {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125em;
+}
