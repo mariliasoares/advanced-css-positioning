@@ -283,7 +283,7 @@ h2.products-cream::before {
 }
 
 .newsletter-container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -340,4 +340,37 @@ h2.products-cream::before {
   padding: 13px 0;
   color: #fff;
   cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  background: #46bec0;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer::after,
+.footer::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer p {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+.footer img {
+  float: right;
+  margin: 0 10px;
+  display: block;
+  padding-top: 5px;
 }
